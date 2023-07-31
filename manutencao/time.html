@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spider Tanks</title>
 
     <!-- Resetar o CSS -->
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="style/reset.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style/styles.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/logo-spidertanks.ico" type="image/x-icon">
@@ -30,8 +30,9 @@
 <body>
 
     <header>
-        <nav class="navbar-expand-lg navbar">
+        <nav class="navbar-expand-lg navbar bg-body-tertiary">
             <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Início</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,11 +49,22 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">Início</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Planilha por time</a>
+                                <a class="nav-link" href="time.html">Contador por time</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Planilha por tank</a>
+                                <a class="nav-link" href="tank.html">Contador por tank</a>
                             </li>
+
+                            <!-- Modo noturno 
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Modo noturno</label>
+                                    </div>
+                                </a>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -62,31 +74,44 @@
 
     <h1>Spider Tanks</h1>
 
-    <!-- Formulário de times -->
+    <!-- Formulário -->
 
-    <main class="container">
+    <main>
         <form id="time-formulario">
             <input type="text" id="time-receber" placeholder="Digite o nome do time">
             <button type="submit" id="time-adicionar" class="botao">Adicionar time</button>
         </form>
 
-        <!-- Lista de times -->
+        <!-- Lista de jogadores -->
+
         <div id="times-lista" class="lista-oculta">
             <table>
                 <thead>
                     <tr class="tabela-titulo">
-                        <th scope="col">Horário</th>
+                        <th scope="col">Check-in</th>
                         <th scope="col">Time</th>
                         <th scope="col">Vitórias</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Aqui serão adicionados os times dinamicamente pelo JavaScript -->
+                    <tr class="tabela-conteudo">
+                        <td id="horario-check-in">00h00min</td>
+                        <td id="nome-time">Nome do time</td>
+                        <td id="vitorias">
+                            <button id="botao-subtrair" class="botao-subtrair botao">-</button>
+                            00
+                            <button id="botao-somar" class="botao-somar botao">+</button>
+                        </td>
+                        <td>
+                            <button id="botao-remover" class="botao-remover botao" title="Remover time">
+                                Excluir
+                            </button>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
 
-            <!-- Botão de remover todos os times -->
             <button id="botao-remover-todos" class="botao-remover botao" title="Remover todos os times">
                 Excluir times
             </button>

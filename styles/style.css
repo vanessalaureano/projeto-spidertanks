@@ -1,0 +1,205 @@
+/* ... (seu CSS atual) ... */
+
+/* Estilos gerais */
+body {
+    /* ... (seu CSS atual) ... */
+}
+
+h1 {
+    /* ... (seu CSS atual) ... */
+}
+
+main {
+    /* ... (seu CSS atual) ... */
+}
+
+/* Estilos do header */
+.offcanvas-header,
+.offcanvas-body {
+    /* ... (seu CSS atual) ... */
+}
+
+/* Estilos do formulário */
+form {
+    /* ... (seu CSS atual) ... */
+}
+
+/* Estilos da tabela */
+table {
+    /* ... (seu CSS atual) ... */
+}
+
+thead th {
+    /* ... (seu CSS atual) ... */
+}
+
+tbody td {
+    /* ... (seu CSS atual) ... */
+}
+
+/* Estilos do botão de remover times */
+#botao-remover-todos {
+    /* ... (seu CSS atual) ... */
+}
+
+/* Estilos do botao */
+.botao {
+    /* ... (seu CSS atual) ... */
+}
+
+.botao:hover {
+    /* ... (seu CSS atual) ... */
+}
+
+/* Estilos do footer */
+.footer {
+    /* ... (seu CSS atual) ... */
+}
+
+footer a {
+    /* ... (seu CSS atual) ... */
+}
+
+footer a:hover {
+    /* ... (seu CSS atual) ... */
+}
+
+
+
+
+
+
+:root {
+    --fonte-principal: 'Noto Sans', sans-serif;
+    --fonte-secundaria: ;
+
+    --cor-principal: #27374D;
+    --cor-secundaria: #526D82;
+    --cor-fonte-principal: #000000;
+    --cor-fonte-secundaria: #FFFFFF;
+    --cor-de-fundo-principal: #9DB2BF;
+    --cor-de-fundo-secundaria: #DDE6ED;
+}
+
+/* Estilos gerais */
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    color: var(--cor-fonte-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* Para garantir que o footer fique no final da tela */
+}
+
+h1 {
+    color: var(--cor-principal);
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+main {
+    flex: 1;
+    /* Para que o main ocupe todo o espaço disponível */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do header */
+
+.offcanvas-header,
+.offcanvas-body {
+    font-size: 18px;
+}
+
+
+/* Estilos para o header */
+.navbar {
+    background-color: var(--cor-de-fundo-secundaria);
+    height: 45px; /* Ajuste a altura desejada aqui */
+}
+
+.navbar a.nav-link {
+    color: var(--cor-de-fundo-principal);
+    transition: color 0.3s;
+}
+
+.navbar a.nav-link:hover {
+    color: var(--fonte-secundaria);
+}
+
+
+/* Estilos do formulário */
+
+form {
+    text-align: center;
+}
+
+/* Estilos da tabela */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    background-color: var(--cor-principal);
+    color: var(--cor-fonte-secundaria);
+    padding: 10px;
+    text-align: center;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid var(--cor-de-fundo-secundaria);
+    white-space: nowrap;
+}
+
+/* Estilos do botão de remover times */
+#botao-remover-todos {
+    margin-top: 20px;
+}
+
+/* Estilos do botao */
+
+.botao {
+    color: var(--cor-fonte-secundaria);
+    background-color: var(--cor-de-fundo-principal);
+    padding: 5px 10px;
+}
+
+.botao:hover {
+    color: var(--cor-fonte-principal);
+    background-color: var(--cor-de-fundo-secundaria);
+    transition-duration: .5s;
+}
+
+/* Estilos do footer */
+
+.footer {
+    color: var(--cor-fonte-secundaria);
+    background-color: var(--cor-principal);
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+footer a {
+    color: var(--cor-fonte-secundaria);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: var(--cor-secundaria);
+    transition: .3s;
+}
