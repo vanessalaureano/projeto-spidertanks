@@ -1,0 +1,20 @@
+/* Estilos do footer */
+
+.footer {
+    color: var(--cor-fonte-secundaria);
+    background-color: var(--cor-principal);
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+footer a {
+    color: var(--cor-fonte-secundaria);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: var(--cor-secundaria);
+    transition: .3s;
+}

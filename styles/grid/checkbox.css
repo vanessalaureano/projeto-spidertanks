@@ -1,0 +1,20 @@
+/* Remover aparência padrão do checkbox do navegador */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 4px;
+    position: relative;
+    top: -1px;
+    background-color: #fff;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--cor-secundaria);
+}

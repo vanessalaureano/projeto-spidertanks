@@ -1,0 +1,28 @@
+/* Estilos do botao */
+
+.botao {
+    color: var(--cor-fonte-secundaria);
+    background-color: var(--cor-de-fundo-principal);
+    padding: 5px 10px;
+}
+
+.botao:hover {
+    color: var(--cor-fonte-principal);
+    background-color: var(--cor-de-fundo-secundaria);
+    transition-duration: .5s;
+}
+
+/* Estilos do botão de links do início */
+
+.botao-inicio {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+/* Estilos do botão de remover times */
+
+#botao-remover-todos {
+    margin-top: 20px;
+}

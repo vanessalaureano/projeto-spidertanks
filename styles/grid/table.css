@@ -1,0 +1,21 @@
+/* Estilos da tabela */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    background-color: var(--cor-principal);
+    color: var(--cor-fonte-secundaria);
+    padding: 10px;
+    text-align: center;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid var(--cor-de-fundo-secundaria);
+    white-space: nowrap;
+}

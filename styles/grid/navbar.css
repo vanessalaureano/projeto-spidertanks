@@ -1,0 +1,23 @@
+/* Estilos do header */
+
+.offcanvas-header,
+.offcanvas-body {
+    font-size: 18px;
+}
+
+
+/* Estilos para o header */
+.navbar {
+    background-color: var(--cor-de-fundo-secundaria);
+    height: 55px;
+    /* Ajuste a altura desejada aqui */
+}
+
+.navbar a.nav-link {
+    color: var(--cor-de-fundo-principal);
+    transition: color 0.3s;
+}
+
+.navbar a.nav-link:hover {
+    color: var(--fonte-secundaria);
+}
