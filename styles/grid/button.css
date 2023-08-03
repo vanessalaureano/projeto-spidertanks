@@ -23,6 +23,6 @@
 
 /* Estilos do botão de remover times */
 
-#botao-remover-todos {
+#botao-remover-todos, #tank-botao-remover-todos {
     margin-top: 20px;
 }
